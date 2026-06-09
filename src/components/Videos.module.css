@@ -1,0 +1,23 @@
+.grid { display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:16px; }
+.card { border-radius:24px; overflow:hidden; position:relative; cursor:pointer; box-shadow:var(--s2); transition:transform .3s; aspect-ratio:16/9; }
+.card:hover { transform:translateY(-4px); box-shadow:var(--s3); }
+.thumb { width:100%; height:100%; object-fit:cover; background:var(--n2); }
+.overlay { position:absolute; inset:0; background:linear-gradient(to top,rgba(22,35,55,.8) 0%,rgba(22,35,55,.08) 58%); }
+.play { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:50px; height:50px; background:var(--y); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:18px; color:var(--n); box-shadow:var(--sy); transition:transform .2s; }
+.card:hover .play { transform:translate(-50%,-50%) scale(1.12); }
+.info { position:absolute; bottom:14px; right:14px; left:14px; }
+.org { font-size:10px; font-weight:800; letter-spacing:1.5px; text-transform:uppercase; color:var(--yl); margin-bottom:3px; }
+.vtitle { font-family:var(--fd); font-size:13.5px; font-weight:700; color:white; line-height:1.4; }
+.meta { display:flex; gap:6px; margin-top:5px; }
+.vtag { background:rgba(255,255,255,.14); border-radius:8px; padding:2px 7px; font-size:10px; color:rgba(255,255,255,.85); font-weight:600; }
+.lang { background:var(--y); border-radius:8px; padding:2px 7px; font-size:10px; color:var(--n); font-weight:800; }
+.modal { position:fixed; inset:0; z-index:9999; background:rgba(5,10,18,.93); backdrop-filter:blur(8px); display:flex; align-items:center; justify-content:center; padding:16px; animation:fi .2s ease; }
+@keyframes fi { from{opacity:0} to{opacity:1} }
+.modalBox { background:var(--n); border-radius:28px; overflow:hidden; width:100%; max-width:780px; box-shadow:0 40px 100px rgba(0,0,0,.6); }
+.modalHd { padding:14px 20px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid rgba(255,255,255,.06); }
+.modalTitle { font-family:var(--fd); font-size:14px; font-weight:700; color:white; flex:1; }
+.modalX { background:rgba(255,255,255,.1); border:none; width:32px; height:32px; border-radius:50%; color:white; font-size:15px; display:flex; align-items:center; justify-content:center; transition:background .2s; }
+.modalX:hover { background:var(--b); }
+.iframe { width:100%; aspect-ratio:16/9; border:none; display:block; }
+@media(max-width:1100px) { .grid { grid-template-columns:1fr 1fr; } }
+@media(max-width:768px)  { .grid { grid-template-columns:1fr; } }

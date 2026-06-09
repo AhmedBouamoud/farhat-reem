@@ -1,0 +1,16 @@
+.row { text-align:center; margin-bottom:32px; }
+.inner {
+  display:inline-flex; flex-wrap:wrap; justify-content:center;
+  gap:4px; padding:5px;
+  background:white; border-radius:36px;
+  box-shadow:var(--s1); border:1px solid var(--bs);
+}
+.tab {
+  background:none; border:none;
+  font-family:var(--fb); font-size:13px; font-weight:600;
+  padding:9px 18px; border-radius:30px; color:var(--sf);
+  transition:all .22s; white-space:nowrap;
+}
+.on { background:var(--gb); color:white; box-shadow:var(--sb); }
+.tab:hover:not(.on) { background:var(--yp); color:var(--n); }
+@media(max-width:600px) { .tab { font-size:12px; padding:8px 12px; } }

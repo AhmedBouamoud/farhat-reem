@@ -1,0 +1,36 @@
+:root {
+  --y: #F5C842; --yl: #FAE07A; --yp: #FFFBEA;
+  --b: #1A6FA8; --bl: #2E8FCC; --bp: #EBF4FB;
+  --n: #162337; --n2: #1E3250;
+  --iv: #FDFCFA; --pa: #F5F0E8;
+  --tx: #1E1E2E; --sf: #5A5A72; --mt: #9090A8;
+  --br: rgba(26,111,168,.15); --bs: rgba(0,0,0,.06);
+  --s1: 0 2px 12px rgba(22,35,55,.07);
+  --s2: 0 8px 32px rgba(22,35,55,.11);
+  --s3: 0 20px 60px rgba(22,35,55,.15);
+  --sy: 0 6px 24px rgba(245,200,66,.30);
+  --sb: 0 6px 24px rgba(26,111,168,.25);
+  --gy: linear-gradient(135deg,#F5C842,#FAE07A);
+  --gb: linear-gradient(135deg,#1A6FA8,#2E8FCC);
+  --gn: linear-gradient(145deg,#162337,#1E3250);
+  --gh: linear-gradient(155deg,#FDFCFA 0%,#FFFBEA 45%,#EBF4FB 100%);
+  --gr: linear-gradient(145deg,#0D1520 0%,#162337 55%,#1A1A08 100%);
+  --fd: 'Cairo', sans-serif;
+  --fb: 'Tajawal', sans-serif;
+}
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--fb);
+  background: var(--iv);
+  color: var(--tx);
+  direction: rtl;
+  overflow-x: hidden;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-thumb { background: var(--y); border-radius: 2px; }
+img { max-width: 100%; display: block; }
+a { text-decoration: none; }
+button { cursor: pointer; font-family: var(--fb); }

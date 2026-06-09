@@ -1,0 +1,36 @@
+.cards { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-bottom:40px; }
+.card { background:white; border-radius:24px; padding:26px; border:1px solid var(--bs); box-shadow:var(--s1); height:100%; transition:all .3s; }
+.card:hover { transform:translateY(-4px); box-shadow:var(--s2); }
+.cardIco { width:48px; height:48px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:22px; margin-bottom:14px; }
+.cardH { font-family:var(--fd); font-size:16px; font-weight:700; color:var(--n); margin-bottom:8px; }
+.cardP { font-size:13.5px; color:var(--sf); line-height:1.75; }
+.tagB { display:inline-block; background:var(--bp); color:var(--b); border-radius:14px; padding:3px 10px; font-size:11px; font-weight:700; margin-top:14px; }
+.tagY { display:inline-block; background:var(--yp); color:#8B6E00; border-radius:14px; padding:3px 10px; font-size:11px; font-weight:700; margin-top:14px; }
+.tagG { display:inline-block; background:rgba(122,158,135,.15); color:#3d7a55; border-radius:14px; padding:3px 10px; font-size:11px; font-weight:700; margin-top:14px; }
+
+.forumHd { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; flex-wrap:wrap; gap:10px; }
+.forumTitle { font-family:var(--fd); font-size:18px; font-weight:800; color:var(--n); }
+.shareBtn { background:var(--gb); color:white; border:none; font-family:var(--fb); font-weight:700; font-size:13px; padding:9px 18px; border-radius:22px; box-shadow:var(--sb); transition:all .3s; }
+.shareBtn:hover { transform:translateY(-1px); }
+
+.post { background:white; border-radius:16px; padding:20px; border:1px solid var(--bs); border-right:3px solid transparent; box-shadow:var(--s1); margin-bottom:12px; transition:all .3s; }
+.post:hover { border-right-color:var(--y); transform:translateX(-3px); box-shadow:var(--s2); }
+.postHd { display:flex; align-items:center; gap:11px; margin-bottom:12px; }
+.avatar { width:42px; height:42px; border-radius:50%; object-fit:cover; object-position:top; border:2px solid var(--y); flex-shrink:0; }
+.author { font-weight:700; font-size:13.5px; color:var(--n); }
+.loc { font-weight:400; font-size:11px; color:var(--mt); }
+.time { font-size:11px; color:var(--mt); margin-top:2px; }
+.text { font-size:14px; line-height:1.75; margin-bottom:12px; }
+.actions { display:flex; gap:8px; }
+.action { background:none; border:none; font-family:var(--fb); font-size:12px; font-weight:600; color:var(--mt); padding:5px 10px; border-radius:14px; transition:all .2s; }
+.action:hover, .liked { background:var(--yp); color:var(--b); }
+
+.firstShare { background:white; border-radius:24px; padding:36px; text-align:center; border:2px dashed rgba(26,111,168,.18); margin-top:4px; }
+.firstIco { font-size:44px; margin-bottom:12px; }
+.firstH { font-family:var(--fd); font-size:18px; font-weight:700; color:var(--n); margin-bottom:8px; }
+.firstP { font-size:14px; color:var(--sf); margin-bottom:20px; max-width:380px; margin-right:auto; margin-left:auto; }
+.firstBtn { background:var(--gb); color:white; border:none; font-family:var(--fb); font-weight:700; font-size:15px; padding:13px 28px; border-radius:36px; box-shadow:var(--sb); transition:all .3s; }
+.firstBtn:hover { transform:translateY(-2px); }
+
+@media(max-width:1100px) { .cards { grid-template-columns:1fr 1fr; } }
+@media(max-width:768px)  { .cards { grid-template-columns:1fr; } }

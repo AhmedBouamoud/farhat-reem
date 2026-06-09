@@ -1,0 +1,8 @@
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.tip { background:white; border-radius:16px; padding:20px 22px; display:flex; gap:14px; align-items:flex-start; border:1px solid var(--bs); border-right:3px solid transparent; box-shadow:var(--s1); transition:all .3s; height:100%; }
+.tip:hover { border-right-color:var(--y); box-shadow:var(--s2); transform:translateX(-3px); }
+.pers { border-color:rgba(245,200,66,.25); }
+.num { width:30px; height:30px; border-radius:50%; flex-shrink:0; background:var(--gy); color:var(--n); font-weight:900; font-size:13px; display:flex; align-items:center; justify-content:center; margin-top:2px; }
+.h { font-weight:700; font-size:14.5px; color:var(--n); margin-bottom:6px; }
+.p { font-size:13px; color:var(--sf); line-height:1.75; }
+@media(max-width:768px) { .grid { grid-template-columns:1fr; } }
